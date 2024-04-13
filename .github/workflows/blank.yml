@@ -1,4 +1,4 @@
-#name: Hi Mascot
+name: Hi Mascot
 on: push
 env:
   mascot: Mona
@@ -10,8 +10,6 @@ jobs:
     steps:
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Mona
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Octocat
-      - run: echo 'Hi $MASCOT' # Hi Mona
-
         env:
           mascot: Octocat
   linux_job:
