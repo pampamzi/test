@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  display-variables:
+    runs-on: ${{ vars.RUNNER }}
+    steps:
+    - name: Use variables
+      run: |
+        echo "repository variable : $REPOSITORY_VAR"
+      env:
+        REPOSITORY_VAR: ${{ vars.REPOSITORY_VAR }}
+
+        
