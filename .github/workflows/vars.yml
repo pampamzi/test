@@ -7,9 +7,8 @@ jobs:
     runs-on: ${{ vars.RUNNER }}
     steps:
     - name: Use variables
-    #es un context no se puede llamar como abajo
       run: |
-        echo "$GITHUB_ACTION"
+        echo "$GITHUB_ACTION $GITHUB_ACTION_PATH"	
 
 
         
