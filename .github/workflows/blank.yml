@@ -10,8 +10,6 @@ jobs:
     env:
       mascot: Leila
     steps:
-      - run: echo 'Hi ${{ env.mascot }}'  # Hi Mona
-      - run: echo 'Hi ${{ env.mascot }}'  # Hi Mona
       - run: echo "Hi $mascot"  # Hi Octocat
         env:
           mascot: Octocat
