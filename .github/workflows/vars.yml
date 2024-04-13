@@ -7,8 +7,8 @@ jobs:
     steps:
     - name: Use variables
       run: |
-        echo "repository variable : $REPOSITORY_VAR"
+        echo "repository variable : $REPOSITORY"
       env:
-        REPOSITORY_VAR: ${{ vars.REPOSITORY_VAR }}
+        REPOSITORY_VAR: ${{ vars.REPOSITORY }}
 
         
