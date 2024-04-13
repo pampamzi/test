@@ -9,6 +9,8 @@ jobs:
     - name: Use variables
       run: |
         echo "$GITHUB_ACTION $GITHUB_ACTOR_ID"	
-        echo "$GITHUB_ACTION_PATH"
+        echo "$GITHUB_ACTION_PATH"        
+        echo "$RUNNER"
+
 
         
