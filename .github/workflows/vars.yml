@@ -9,7 +9,7 @@ jobs:
     - name: Use variables
     #es un context no se puede llamar como abajo
       run: |
-        echo "repository variable : $REPOSITORY_VAR"
+        echo "$GITHUB_ACTION"
 
 
         
