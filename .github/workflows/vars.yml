@@ -9,7 +9,6 @@ jobs:
     - name: Use variables
       run: |
         echo "repository variable : $REPOSITORY_VAR"
-      env:
-        REPOSITORY_VAR: ${{ vars.REPOSITORY }}
+
 
         
