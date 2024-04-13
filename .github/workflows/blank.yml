@@ -5,14 +5,14 @@ env:
   super_duper_var: totally_awesome
 
 jobs:
+env:
+  mascot: Leila
   windows_job:
-    env:
-      mascot: Leila
     runs-on: windows-latest
     steps:
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Mona
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Mona
-      - run: echo 'Hi ${{ env.mascot }}'  # Hi Octocat
+      - run: echo "Hi $mascot"  # Hi Octocat
         env:
           mascot: Octocat
   linux_job:
