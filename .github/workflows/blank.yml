@@ -6,11 +6,11 @@ env:
 
 jobs:
   windows_job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       mascot: Leila
     steps:
-      - run: echo ${env:MASCOT} # Hi Octocat
+      - run: echo $MASCOT # Hi Octocat
         env:
           mascot: Octocat
   linux_job:
