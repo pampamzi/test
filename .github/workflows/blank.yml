@@ -10,7 +10,7 @@ jobs:
     env:
       mascot: Leila
     steps:
-      - run: echo $MASCOT # Hi Octocat
+      - run: echo "hi $mascot" # Hi Octocat
         env:
           mascot: Octocat
   linux_job:
