@@ -8,13 +8,14 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    runs-on: windows-latest 
     permissions:
       contents: read
-      pull-requests: write
-  steps:  
+      pull-requests: write  
     uses: pampamzi/test/.github/workflows/reusable.yml@main
     with:
       config-path: .github/labeler.yml
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
+  call-other-action:
+    uses: actions/setup-node@v4.0.2
+      
